@@ -32,6 +32,7 @@ bool isValid(string password)   //Function to check validity of password
  
         // Check digits from 0 to 9
         for(int i = 0; i <= 9; i++)
+        
         {
              
             // To convert int to string
@@ -884,6 +885,8 @@ void Admin::SeeReplies(string CNIC){    //See replies for patient
         if(temp.NIC==nic) cout << "They Replied: "<< temp.reply;
 	}
 }
+
+
 void Menu(){
     oladoc MS;
     int input,rpt;
@@ -994,6 +997,10 @@ void Menu(){
         cout << "Press 1 to continue or press any key to exit!" << endl; cin >> rpt;
     }while(rpt==1);
     }
+
+void TESTFUNC(){
+    // To see if changes are committed
+}
 int main(){
     system("clear");
     Menu();
